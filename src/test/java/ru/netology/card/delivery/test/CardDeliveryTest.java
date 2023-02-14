@@ -19,7 +19,6 @@ public class CardDeliveryTest {
 
     @Test
     void shouldTestSuccessfulSending() {
-        //LocalDate.now();
         open("http://localhost:9999");
         $("[data-test-id='city'] input").setValue("Самара");
         $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
