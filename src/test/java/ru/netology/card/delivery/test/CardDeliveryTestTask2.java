@@ -22,7 +22,6 @@ public class CardDeliveryTestTask2 {
 
     @Test
     void shouldTestInteractionWithComplexElements() {
-        Configuration.holdBrowserOpen = true;
         open("http://localhost:9999");
         $("[data-test-id='city'] input").setValue("Кр");
         $(byText("Краснодар")).shouldBe(visible).click();
